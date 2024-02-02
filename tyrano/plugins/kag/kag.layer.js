@@ -111,6 +111,8 @@ tyrano.plugin.kag.layer = {
     )
       this.getLayer("message" + i).hide();
     this.hideFixLayer();
+    // menu_bar の画像を非表示にします
+    document.querySelector(".menu_bar").style.display = "none";
   },
   showMessageLayers: function () {
     this.kag.stat.is_hide_message = !1;
@@ -123,6 +125,8 @@ tyrano.plugin.kag.layer = {
       "true" == j_layer.attr("l_visible") && j_layer.show();
     }
     this.showFixLayer();
+    // menu_bar の画像を表示状態にします
+    document.querySelector(".menu_bar").style.display = "block";
   },
   showFixLayer: function () {
     $(".fixlayer").show();
