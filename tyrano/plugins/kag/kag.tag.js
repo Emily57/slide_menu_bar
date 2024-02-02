@@ -1658,6 +1658,9 @@ tyrano.plugin.kag.tag.button = {
                 ? that.kag.ftag.startTag("autostop", { next: "false" })
                 : that.kag.ftag.startTag("autostart", {});
               break;
+            case "toggle_menu_bar":
+              that.kag.menu.toggleMenuBar();
+              break;
             case "sleepgame":
               j_button.trigger("mouseout");
               if (null != that.kag.tmp.sleep_game) return !1;

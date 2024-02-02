@@ -3825,3 +3825,13 @@
     transform: none;
   }
 }
+
+.menu_bar.open {
+  transform: translateY(300px);
+  transition: transform 0.5s;
+}
+
+.menu_bar.close {
+  transform: translateY(0);
+  transition: transform 0.5s;
+}

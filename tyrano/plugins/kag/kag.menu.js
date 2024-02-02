@@ -660,4 +660,15 @@ tyrano.plugin.kag.menu = {
             : elem.msRequestFullscreen()));
   },
   test: function () {},
+  toggleMenuBar: function () {
+    document.querySelectorAll(".menu_bar").forEach(function (element) {
+      if (element.classList.contains("open")) {
+        element.classList.remove("open");
+        element.classList.add("close");
+      } else {
+        element.classList.remove("close");
+        element.classList.add("open");
+      }
+    });
+  },
 };

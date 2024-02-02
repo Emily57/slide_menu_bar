@@ -11,6 +11,13 @@
 
 ;メニューボタンの表示
 @showmenubutton
+; メニューバー
+[image name="menu_bar" layer="0" storage="menu_bar.png" width=200 height=auto x=1080 y=-370 visible=true]
+[button name="menu_bar" layer="0" graphic="menu_bar_btn.png" width=200 height=auto role="toggle_menu_bar" x=1080 y=10]
+[button name="menu_bar" layer="0" graphic="menu_bar_save.png" width=170 height=auto role="save" x=1095 y=-265]
+[button name="menu_bar" layer="0" graphic="menu_bar_load.png" width=170 height=auto role="load" x=1095 y=-200]
+[button name="menu_bar" layer="0" graphic="menu_bar_log.png" width=170 height=auto role="backlog" x=1095 y=-135]
+[button name="menu_bar" layer="0" graphic="menu_bar_config.png" width=170 height=auto role="sleepgame" storage="config.ks" x=1095 y=-70]
 
 ;メッセージウィンドウの設定
 [position layer="message0" left=160 top=500 width=1000 height=200 page=fore visible=true]
